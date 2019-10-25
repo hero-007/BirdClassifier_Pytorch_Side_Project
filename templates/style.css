@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
 :root {
-    --primary: #E6AF2E;
-    --dark: #FADF63;
-    --light: #F7FFF6;
-    --foot: #632B30;
-    --shadow: 0 2px 7px rgba(104, 104, 104, 0.8);
+    --primary: #a2d5f2;
+    --dark: #07689f;
+    --light: #a2d5f2;
+    --foot: #40514e;
+    --shadow: 5px 4px 10px 1px rgba(34, 138, 197, 0.71);
 }
 
 html{
@@ -16,6 +22,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary);
     line-height: 1.4;
+}
+
+p{
+    font-size: 1.1rem;
 }
 
 section {
@@ -32,25 +42,26 @@ footer {
     background-color: var(--foot);
     color: var(--light);
     font-size: 1.5rem;
-    padding: 5px 2px;
+    padding: 8px 2px;
+    font-size: 21px;
 }
 
 
 .btn{
-    background: var(--dark);
+    background: #fff;
+    width: 120px;
     font-size: 18px;
-    border: 1px #000 solid;
+    border: none;
     border-radius: 2px;
     padding: 5px 7px;
-    color: #000000;
-    box-shadow: var(--shadow);
+    color: #000;
+    transition: 0.3s linear;
 }
 
 .btn:hover{
+    background: var(--light);
     box-shadow: 0 0.5px 2px rgba(104, 104, 104, 0.8);
-}
-p{
-    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 ul {
@@ -65,17 +76,22 @@ li {
     list-style: none;
     text-align: center;
     box-shadow: var(--shadow);
-    padding: 5px;
-    background-color: #FADF63;
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 0.2rem;
+    background-color: var(--dark);
+    transition: 0.3s linear;
+    margin-left: 10px;
 }
 
 li:hover{
-    box-shadow: 0 0.5px 2px rgba(104, 104, 104, 0.8);
+    box-shadow: 0 0.5px 2px rgba(156, 206, 253, 0.8);
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #fff;
     
 }
 
@@ -110,7 +126,12 @@ a {
     background-color: var(--dark);
     padding: 5px 7px;
     box-shadow: var(--shadow);
-    border-radius: 1rem;
+    border-radius: 0.6rem;
+    transition: 0.3s linear;
+}
+
+.showcase-items:hover, .showcase-items-form:hover {
+    box-shadow: none;
 }
 
 .authors {
@@ -127,7 +148,7 @@ a {
     background-color: var(--dark);
     padding: 5px 7px;
     box-shadow: var(--shadow);
-    border-radius: 1rem;
+    border-radius: 0.6rem;
 }
 
 .showcase-items-form {
@@ -138,15 +159,20 @@ a {
     background-color: var(--dark);
     padding: 5px 7px;
     box-shadow: var(--shadow);
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     margin-bottom: 20px;
     margin-left: 20%;
     margin-right: 20%;
     padding-bottom: 20px;
+    transition: 0.3s linear;
 }
 
 .showcase-items h3{
     font-size: 20px;
+}
+
+.showcase-items p {
+    font-size: 16px;
 }
 
 .select-file{
